@@ -1,6 +1,5 @@
 import { Header } from './header'
 import { Intro } from './intro'
-import './App.css';
 
 function App() {
   return (
