@@ -1,0 +1,96 @@
+.intro {
+  min-height: 100vh;
+  background: url(./img/intro_bg.jpg) no-repeat center;
+  /* Adding no repeat allows not to duplicat the background pic on next poges */
+  background-size: cover;
+  /* Allowing the pic to cover the page completely regardless of its size */
+  padding-top: 263px;
+  padding-bottom: 223px;
+  /* Creating a safe padding for the main title not to be overlayed by a big ammount of content. Calculations: title height (42px) + padding-top (93px) + padding-bottom (88px) = 223px */
+}
+
+.title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 60px;
+  color: #ffffff;
+  max-width: 619px;
+  margin-bottom: 22px;
+}
+
+.subtitle {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 546px;
+  margin-bottom: 59px;
+}
+
+.searchFormInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.searchFormField {
+  width: 297px;
+  background: transparent url(./svg/circle-icon.svg) no-repeat left 6px;
+  background-size: 20px;
+  border: 0;
+  border-bottom: 2px solid #bfc0c5;
+  margin-right: 60px;
+  padding-left: 43px;
+  padding-bottom: 22px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+
+.searchFormField::-webkit-input-placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+
+.searchFormField::-moz-placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+
+.searchFormField:-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+
+.searchFormField::-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+
+.searchFormField::placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+
+.searchFormSubmit {
+  padding: 15px 30px;
+  text-transform: uppercase;
+  /* Changing the letters of the text into uppercase */
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+  background: #1b7dff;
+  border: 0;
+}
+.searchFormSubmit:hover,
+.searchFormSubmit:focus,
+.searchFormSubmit:active {
+  background: #0e66da;
+  /* Changing the hover, click and select colors by adding a darker one */
+}
