@@ -4,7 +4,7 @@ function Intro() {
   return (
     <div className={styles.intro} id="sign-in">
       <div className="wrapper">
-        <h1 className={styles.title} > Discover Amazing places in Japan</h1>
+        <h1 className={styles.title}> Discover Amazing places in Japan</h1>
         <p className={styles.subtitle}>
           Jump off balcony, onto stranger's head. Chase ball of string hide
           when guests come over. Being gorgeous with belly side up i could pee

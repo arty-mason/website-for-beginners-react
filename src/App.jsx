@@ -1,5 +1,6 @@
 import { Header } from './header'
 import { Intro } from './intro'
+import { Benefits } from './benefits'
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <Header />
       <main className="main">
         <Intro />
+        <Benefits />
       </main>
     </div>
   );
