@@ -9,7 +9,7 @@ function Benefits() {
           <div className={styles.benefitsCard}>
             <div className={styles.benefitsCardPic}>
               <img
-                src="/img/svg/temple-icon.svg"
+                src="/svg/temple-icon.svg"
                 alt="Welcome to Odigo!"
                 className={styles.benefitsCardThumb}
               />
@@ -24,7 +24,7 @@ function Benefits() {
           <div className={styles.benefitsCard}>
             <div className={styles.benefitsCardPic}>
               <img
-                src="/img/svg/person-icon.svg"
+                src="/svg/person-icon.svg"
                 alt="Your Personal Japan Guide"
                 className={styles.benefitsCardThumb}
               />
@@ -39,7 +39,7 @@ function Benefits() {
           <div className={styles.benefitsCard}>
             <div className={styles.benefitsCardPic}>
               <img
-                src="/img/svg/building-icon.svg"
+                src="/svg/building-icon.svg"
                 alt="Promoting Local Businesses"
                 className={styles.benefitsCardThumb}
               />

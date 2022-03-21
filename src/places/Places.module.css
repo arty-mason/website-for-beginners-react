@@ -1,0 +1,131 @@
+.places {
+  margin-bottom: 131px;
+}
+
+.placesCaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.placesTitle {
+  margin-right: 15px;
+}
+
+.placesViewAll {
+  padding-right: 59px;
+  font-size: 16px;
+  color: #006dfe;
+  text-decoration: none;
+  background: url(./svg/arrow-right-icon.svg) no-repeat right center;
+}
+
+.placesViewAll:hover,
+.placesViewAll:focus {
+  opacity: 0.65;
+}
+
+.placesCards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  /* Creating 6 grid columns with the size of 1fr */
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+  row-gap: 10px;
+  /* The amount of space between the cards */
+}
+
+.placesCard {
+  position: relative;
+  /* To add a pseudoelement later on */
+  overflow: hidden;
+  /* To avoid the hover crossing going out of the container frame, we use "overflow: hidden" */
+}
+
+.placesCard::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 24, 36, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  /* Creating a pseudoelement that will "darken"  pictures as in the original layout (overlay) */
+}
+
+.placesCard:hover .places__card-pic {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  /* Making the picture increase it's size by 105% while hovering over it */
+}
+
+.placesCardTitle {
+  font-size: 50px;
+  line-height: 60px;
+  color: #fff;
+  position: absolute;
+  bottom: 27px;
+  left: 29px;
+  z-index: 3;
+  /* Overlaying the title over pseudoelement for it not to be darkened */
+}
+
+.placesCardSizeLg {
+  -ms-grid-column-span: 3;
+  grid-column: span 3;
+  /* Allowing each of the upper row columns to take up the space of 3 cards per 6-grid row  */
+}
+
+.placesCardSizeSm {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+  /* Changing the sizing of the bottom row columns to 2 cards per 6-grid row */
+}
+
+.placesCardPic {
+  width: 100%;
+  /* Letting the picture take up the whole width of its container*/
+  -webkit-transition: 0.15s;
+  -o-transition: 0.15s;
+  transition: 0.15s;
+  /* Setting a slight transition for the picture to gradually change its size */
+}
+
+.placesCardPicSizeLg {
+  height: 354px;
+  /* Limiting the height of the picture*/
+  -o-object-fit: cover;
+  object-fit: cover;
+  /* Manipulating the behavior of the picture inside its container and making sure the proportions will stay the same after resizing*/
+}
+
+.placesCardPicSizeSm {
+  height: 283px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.placesCardLink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  /* Placing the link over all the layers by increasing its z-index */
+}

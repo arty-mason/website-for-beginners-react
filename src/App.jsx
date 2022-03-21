@@ -1,6 +1,7 @@
 import { Header } from './header'
 import { Intro } from './intro'
 import { Benefits } from './benefits'
+import { Places } from './places'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <main className="main">
         <Intro />
         <Benefits />
+        <Places />
       </main>
     </div>
   );

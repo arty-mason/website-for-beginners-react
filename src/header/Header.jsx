@@ -8,7 +8,7 @@ function Header() {
                     <div className={styles.logo}>
                         <a href="/" className={styles.link}>
                             <img
-                                src={process.env.PUBLIC_URL + "/img/svg/odigo-logo.svg"}
+                                src={process.env.PUBLIC_URL + "/svg/odigo-logo.svg"}
                                 alt="Discover Amazing places in Japan"
                             />
                         </a>
@@ -45,5 +45,4 @@ function Header() {
         </header >
     );
 }
-
 export default Header;
