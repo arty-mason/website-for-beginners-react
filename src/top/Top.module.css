@@ -1,0 +1,107 @@
+.top {
+  margin-bottom: 86px;
+}
+
+.topTitle {
+  margin-bottom: 54px;
+}
+
+.topCards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 57px 1fr 57px 1fr 57px 1fr 57px 1fr 57px 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  -webkit-column-gap: 57px;
+  -moz-column-gap: 57px;
+  column-gap: 57px;
+  row-gap: 57px;
+}
+
+.topCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+  /* Allowing each column to take up the space of 2  */
+}
+
+.topCardPic {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.topCardStats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-color: rgba(21, 24, 36, 0.6);
+  padding: 16px 25px;
+}
+
+.topCardTitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  margin: 0 auto 0 0;
+}
+
+.topCardLikes {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  padding-right: 20px;
+  background: url(./svg/heart-icon.svg) no-repeat right;
+  margin-right: 14px;
+}
+
+.topCardComments {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  padding-right: 23px;
+  background: url(./svg/comment-icon.svg) no-repeat right;
+}
+
+.topCardDesc {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 31px;
+}
+
+.topCardMore {
+  width: 118px;
+  /* Limiting the button's width due to flex-direction change and them becoming longer */
+  padding: 12px 19px;
+  background: #006dfe;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  margin: auto 0 0 0;
+  /* Makinng the buttons align in case of content increase */
+}
+
+.topCardMore:hover,
+.topCardMore:focus,
+.topCardMore:active {
+  background: #0e66da;
+}

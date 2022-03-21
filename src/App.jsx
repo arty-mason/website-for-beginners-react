@@ -3,6 +3,7 @@ import { Intro } from './intro'
 import { Benefits } from './benefits'
 import { Places } from './places'
 import { Tours } from './tours'
+import { Top } from './top'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Benefits />
         <Places />
         <Tours />
+        <Top />
       </main>
     </div>
   );
