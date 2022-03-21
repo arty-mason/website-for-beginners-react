@@ -9,7 +9,7 @@ function Benefits() {
           <div className={styles.benefitsCard}>
             <div className={styles.benefitsCardPic}>
               <img
-                src="/svg/temple-icon.svg"
+                src="./svg/temple-icon.svg"
                 alt="Welcome to Odigo!"
                 className={styles.benefitsCardThumb}
               />

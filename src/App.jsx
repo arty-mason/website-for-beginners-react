@@ -2,6 +2,7 @@ import { Header } from './header'
 import { Intro } from './intro'
 import { Benefits } from './benefits'
 import { Places } from './places'
+import { Tours } from './tours'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Intro />
         <Benefits />
         <Places />
+        <Tours />
       </main>
     </div>
   );

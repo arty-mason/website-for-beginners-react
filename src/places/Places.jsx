@@ -3,7 +3,7 @@ import styles from './Places.module.css';
 function Places() {
   return (
     <div className={styles.places}>
-      <div className={styles.wrapperFull}>
+      <div>
         <div className={styles.placesCaption}>
           <h2 className={styles.placesTitle} >
             {/* "section-title" */}
