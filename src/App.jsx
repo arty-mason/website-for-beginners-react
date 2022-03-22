@@ -4,6 +4,7 @@ import { Benefits } from './benefits'
 import { Places } from './places'
 import { Tours } from './tours'
 import { Top } from './top'
+import { Videos } from './videos'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Places />
         <Tours />
         <Top />
+        <Videos />
       </main>
     </div>
   );
