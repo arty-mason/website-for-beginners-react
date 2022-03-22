@@ -5,6 +5,7 @@ import { Places } from './places'
 import { Tours } from './tours'
 import { Top } from './top'
 import { Videos } from './videos'
+import { Footer } from './footer'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Tours />
         <Top />
         <Videos />
+        <Footer />
       </main>
     </div>
   );
