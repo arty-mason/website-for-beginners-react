@@ -506,3 +506,25 @@ img {
   /* Centering all the content */
   padding: 0 15px;
 }
+
+.sectionTitle {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  position: relative;
+  /* Setting a relative position to the parent container to have absolute position in the pseudoelement */
+  padding-bottom: 10px;
+  /* See above */
+}
+
+.sectionTitle::after {
+  display: block;
+  content: "";
+  /* Creating content property for it to display on the screen */
+  width: 253px;
+  height: 3px;
+  background-color: #006dfe;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

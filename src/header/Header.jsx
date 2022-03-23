@@ -1,4 +1,5 @@
 import styles from './Header.module.css';
+import odigoLogo from './svg/odigo-logo.svg';
 
 function Header() {
     return (
@@ -8,13 +9,13 @@ function Header() {
                     <div className={styles.logo}>
                         <a href="/" className={styles.link}>
                             <img
-                                src={process.env.PUBLIC_URL + "/svg/odigo-logo.svg"}
+                                src={odigoLogo}
                                 alt="Discover Amazing places in Japan"
                             />
                         </a>
                     </div>
                     <nav className={styles.nav}>
-                        <ul className={styles.list}>s
+                        <ul className={styles.list}>
                             <li className={styles.item}>
                                 <a href="#articles" className={styles.link}>Articles</a>
                             </li>
@@ -30,10 +31,6 @@ function Header() {
                                 <a href="#sign-in" className={styles.link}>Sign in</a>
                             </li>
                         </ul>
-                        <div className="header__nav-close">
-                            <span className="header__nav-close-line"> </span>
-                            <span className="header__nav-close-line"></span>
-                        </div>
                     </nav>
                     <div className={styles.burger}>
                         <span className={styles.lineFirst}></span>

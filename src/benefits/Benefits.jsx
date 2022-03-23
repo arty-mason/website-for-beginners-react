@@ -1,4 +1,7 @@
 import styles from './Benefits.module.css';
+import templeIcon from "./svg/temple-icon.svg"
+import personIcon from "./svg/person-icon.svg"
+import buildingIcon from "./svg/building-icon.svg"
 
 function Benefits() {
   return (
@@ -9,7 +12,7 @@ function Benefits() {
           <div className={styles.benefitsCard}>
             <div className={styles.benefitsCardPic}>
               <img
-                src="./svg/temple-icon.svg"
+                src={templeIcon}
                 alt="Welcome to Odigo!"
                 className={styles.benefitsCardThumb}
               />
@@ -24,7 +27,7 @@ function Benefits() {
           <div className={styles.benefitsCard}>
             <div className={styles.benefitsCardPic}>
               <img
-                src="/svg/person-icon.svg"
+                src={personIcon}
                 alt="Your Personal Japan Guide"
                 className={styles.benefitsCardThumb}
               />
@@ -39,7 +42,7 @@ function Benefits() {
           <div className={styles.benefitsCard}>
             <div className={styles.benefitsCardPic}>
               <img
-                src="/svg/building-icon.svg"
+                src={buildingIcon}
                 alt="Promoting Local Businesses"
                 className={styles.benefitsCardThumb}
               />

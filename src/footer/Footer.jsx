@@ -1,4 +1,5 @@
 import styles from './Footer.module.css';
+import odigoLogoFooter from "./svg/odigo-logo-footer.svg";
 
 function Footer() {
   return (
@@ -7,13 +8,12 @@ function Footer() {
         <div className={styles.footerItem}>
           <div className={styles.footerLogo}>
             <img
-              src=".svg/odigo-logo-footer.svg"
+              src={odigoLogoFooter}
               alt="Discover Amazing places in Japan"
-
             />
           </div>
           <nav className={styles.footerNav}>
-            <ul className="footer__menu">
+            <ul>
               <li >
                 <h3 className={styles.footerMenuTitle}>Company</h3>
               </li>
@@ -30,7 +30,7 @@ function Footer() {
                 <a href="#!" className={styles.footerMenuLink}>Privacy Policy</a>
               </li>
             </ul>
-            <ul className="footer__menu">
+            <ul>
               <li >
                 <h3 className={styles.footerMenuTitle}>Locations</h3>
               </li>
@@ -47,7 +47,7 @@ function Footer() {
                 <a href="#!" className={styles.footerMenuLink}>Hokkaido</a>
               </li>
             </ul>
-            <ul className="footer__menu">
+            <ul>
               <li >
                 <h3 className={styles.footerMenuTitle}>Social Media</h3>
               </li>

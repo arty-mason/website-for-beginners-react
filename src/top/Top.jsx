@@ -1,16 +1,22 @@
 import styles from './Top.module.css';
+import cs from 'classnames';
+import topPic1 from './img/top-pic-1-min.jpg';
+import topPic2 from './img/top-pic-2-min.jpg';
+import topPic3 from './img/top-pic-3-min.jpg';
+import topPic4 from './img/top-pic-4-min.jpg';
+import topPic5 from './img/top-pic-5-min.jpg';
+import topPic6 from './img/top-pic-6-min.jpg';
 
 function Top() {
   return (
     <div className={styles.top} id="locations">
       <div>
-        <h2 className={styles.topTitle} > Today top places to visit</h2>
-        {/* section-title */}
+        <h2 className={cs(styles.topTitle, "sectionTitle")}> Today top places to visit</h2>
         <div className={styles.topCards}>
           <div className={styles.topCard}>
             <div className={styles.topCardPic}>
               <img
-                src="./img/top-pic-1-min.jpg"
+                src={topPic1}
                 alt="NAGOYA"
               />
               <div className={styles.topCardStats}>
@@ -33,7 +39,7 @@ function Top() {
           <div className={styles.topCard}>
             <div className={styles.topCardPic}>
               <img
-                src="./img/top-pic-2-min.jpg"
+                src={topPic2}
                 alt="NIIGATA"
               />
               <div className={styles.topCardStats}>
@@ -56,7 +62,7 @@ function Top() {
           <div className={styles.topCard}>
             <div className={styles.topCardPic}>
               <img
-                src="./img/top-pic-3-min.jpg"
+                src={topPic3}
                 alt="OSAKA"
               />
               <div className={styles.topCardStats}>
@@ -79,7 +85,7 @@ function Top() {
           <div className={styles.topCard}>
             <div className={styles.topCardPic}>
               <img
-                src="./img/top-pic-4-min.jpg"
+                src={topPic4}
                 alt="SAITAMA"
               />
               <div className={styles.topCardStats}>
@@ -102,7 +108,7 @@ function Top() {
           <div className={styles.topCard}>
             <div className={styles.topCardPic}>
               <img
-                src="./img/top-pic-5-min.jpg"
+                src={topPic5}
                 alt="UENO"
               />
               <div className={styles.topCardStats}>
@@ -125,7 +131,7 @@ function Top() {
           <div className={styles.topCard}>
             <div className={styles.topCardPic}>
               <img
-                src="./img/top-pic-6-min.jpg"
+                src={topPic6}
                 alt="SHIBUYA"
               />
               <div className={styles.topCardStats}>
