@@ -1,14 +1,16 @@
+import cs from 'classnames'
 import styles from './Tours.module.css';
+import tour1 from './img/tour-1-min.jpg';
+
 
 function Tours() {
   return (
     <div className={styles.container} id="articles">
       <div>
-        <div className={styles.toursTour}>
-          {/* tour */}
+        <div className={cs(styles.toursTour, styles.tour)}>
           <div className={styles.toursTour}>
             <img
-              src="./img/tour-1-min.jpg"
+              src={tour1}
               alt="Prefecture in Focus: Tottori"
             />
           </div>
@@ -23,8 +25,7 @@ function Tours() {
             <a href="#!" className={styles.tourMore}>VIEW PREFECTURE</a>
           </div>
         </div>
-        <div className={styles.toursTour}>
-          {/* tour */}
+        <div className={cs(styles.toursTour, styles.tour)}>
           <div className={styles.tourInfo}>
             <h3 className={styles.tourTitle}>
               Featured Neighborhood: Kyoto’s Arashiyama

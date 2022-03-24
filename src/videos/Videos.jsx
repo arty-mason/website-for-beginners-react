@@ -10,7 +10,7 @@ function Videos() {
           src="https://www.youtube.com/embed/0nTO4zSEpOs"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </div>
     </div >
