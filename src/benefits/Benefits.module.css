@@ -28,7 +28,7 @@
   background-color: #fff;
 }
 
-.benfitsCards {
+.benefitsCards {
   display: -ms-grid;
   display: grid;
   /* Making the element display in the grid format*/

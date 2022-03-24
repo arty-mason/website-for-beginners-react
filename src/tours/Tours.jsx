@@ -8,7 +8,7 @@ function Tours() {
     <div className={styles.container} id="articles">
       <div className="wrapper">
         <div className={cs(styles.toursTour, styles.tour)}>
-          <div className={styles.toursTour}>
+          <div className={styles.tourPic}>
             <img
               src={tour1}
               alt="Prefecture in Focus: Tottori"
