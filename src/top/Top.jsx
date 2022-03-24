@@ -1,11 +1,11 @@
 import cs from 'classnames';
 import styles from './Top.module.css';
-import cardsConfig from './config'
+import cardsConfig from './config';
 
 function Top() {
   return (
     <div className={styles.top} id="locations">
-      <div>
+      <div className="wrapper">
         <h2 className={cs(styles.topTitle, "sectionTitle")}> Today top places to visit</h2>
         <div className={styles.topCards}>
           {cardsConfig.map((cardInfo) => {

@@ -1,10 +1,11 @@
 import cs from 'classnames';
 import styles from './Places.module.css';
+import placesConfig from './config'
 
 function Places() {
   return (
     <div className={styles.places}>
-      <div>
+      <div className="wrapper">
         <div className={styles.placesCaption}>
           <h2 className={cs(styles.placesTitle, "sectionTitle")}>
             Get inspired for your next trip
@@ -12,54 +13,25 @@ function Places() {
           <a href="#!" className={styles.placesViewAll}>VIEW ALL</a>
         </div>
         <div className={styles.placesCards}>
-          <div className={cs(styles.placesCard, styles.placesCardSizeLg)}>
-            < img
-              src="/img/place-1-min.jpg"
-              alt="Mount Fuji"
-              className={cs(styles.placesCardPic, styles.placesCardPicSizeLg)}
-            />
-            <h3 className={styles.placesCardTitle}>
-              Mount Fuji
-            </h3>
-            <a href="#!" className={styles.placesCardLink}></a>
-          </div>
-          <div className={cs(styles.placesCard, styles.placesCardSizeLg)}>
-            <img
-              src="/img/place-2-min.jpg"
-              alt="Kyoto"
-              className={cs(styles.placesCardPic, styles.placesCardPicSizeLg)}
-            />
-            <h3 className={styles.placesCardTitle}>Kyoto</h3>
-            <a href="#!" className={styles.placesCardLink}></a>
-          </div>
-          <div className={cs(styles.placesCard, styles.placesCardSizeSm)}>
-            <img
-              src="/img/place-3-min.jpg"
-              alt="Tokyo"
-              className={cs(styles.placesCardPic, styles.placesCardPicSizeSm)}
-            />
+          {placesConfig.map((placeInfo, index) => {
+            const isLgCard = index <= 1;
+            const containerClass = isLgCard ? styles.placesCardSizeLg : styles.placesCardSizeSm;
+            const imgContainerClass = isLgCard ? styles.placesCardPicSizeLg : styles.placesCardPicSizeSm;
 
-            <h3 className={styles.placesCardTitle}>Tokyo</h3>
-            <a href="#!" className={styles.placesCardLink}></a>
-          </div>
-          <div className={cs(styles.placesCard, styles.placesCardSizeSm)}>
-            <img
-              src="/img/place-4-min.jpg"
-              alt="Niigata"
-              className={cs(styles.placesCardPic, styles.placesCardPicSizeSm)}
-            />
-            <h3 className={styles.placesCardTitle}>Niigata</h3>
-            <a href="#!" className={styles.placesCardLink}></a>
-          </div>
-          <div className={cs(styles.placesCard, styles.placesCardSizeSm)}>
-            <img
-              src="/img/place-5-min.jpg"
-              alt="Sapporo"
-              className={cs(styles.placesCardPic, styles.placesCardPicSizeSm)}
-            />
-            <h3 className={styles.placesCardTitle}>Sapporo</h3>
-            <a href="#!" className={styles.placesCardLink}></a>
-          </div>
+            return (
+              <div key={placeInfo.id} className={cs(styles.placesCard, containerClass)}>
+                <img
+                  src={placeInfo.img}
+                  alt={placeInfo.name}
+                  className={cs(styles.placesCardPic, imgContainerClass)}
+                />
+                <h3 className={styles.placesCardTitle}>
+                  {placeInfo.name}
+                </h3>
+                <a href={placeInfo.link} className={styles.placesCardLink}></a>
+              </div>
+            )
+          })}
         </div>
       </div>
     </div >

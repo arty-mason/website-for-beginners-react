@@ -6,7 +6,7 @@ import tour1 from './img/tour-1-min.jpg';
 function Tours() {
   return (
     <div className={styles.container} id="articles">
-      <div>
+      <div className="wrapper">
         <div className={cs(styles.toursTour, styles.tour)}>
           <div className={styles.toursTour}>
             <img
