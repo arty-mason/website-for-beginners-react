@@ -1,12 +1,12 @@
 import cs from 'classnames'
 import styles from './Tours.module.css';
 import tour1 from './img/tour-1-min.jpg';
-
+import { Wrapper } from '../shared/wrapper'
 
 function Tours() {
   return (
     <div className={styles.container} id="articles">
-      <div className="wrapper">
+      <Wrapper>
         <div className={cs(styles.toursTour, styles.tour)}>
           <div className={styles.tourPic}>
             <img
@@ -46,7 +46,7 @@ function Tours() {
             />
           </div>
         </div>
-      </div>
+      </Wrapper>
     </div >
   )
 }

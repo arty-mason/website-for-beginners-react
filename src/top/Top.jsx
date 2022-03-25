@@ -1,13 +1,14 @@
-import cs from 'classnames';
 import styles from './Top.module.css';
 import cardsConfig from './config';
+import { SectionTitle } from '../shared/section-title'
+import { Wrapper } from '../shared/wrapper'
 
 function Top() {
   return (
     <div className={styles.top} id="locations">
-      <div className="wrapper">
-        <h2 className={cs(styles.topTitle, "sectionTitle")}> Today top places to visit</h2>
-        <div className={styles.topCards}>
+      <Wrapper>
+        <SectionTitle className={styles.topTitle} text="Today top places to visit" />
+        < div className={styles.topCards}>
           {cardsConfig.map((cardInfo) => {
             return (
               <div key={cardInfo.id} className={styles.topCard}>
@@ -34,7 +35,7 @@ function Top() {
             )
           })}
         </div>
-      </div>
+      </Wrapper>
     </div >
   )
 }

@@ -1,15 +1,16 @@
 import cs from 'classnames';
 import styles from './Places.module.css';
 import placesConfig from './config'
+import { Wrapper } from '../shared/wrapper'
+import { SectionTitle } from '../shared/section-title'
+
 
 function Places() {
   return (
     <div className={styles.places}>
-      <div className="wrapper">
+      <Wrapper>
         <div className={styles.placesCaption}>
-          <h2 className={cs(styles.placesTitle, "sectionTitle")}>
-            Get inspired for your next trip
-          </h2>
+          <SectionTitle className={styles.placesTitle} text="Get inspired for your next trip" />
           <a href="#!" className={styles.placesViewAll}>VIEW ALL</a>
         </div>
         <div className={styles.placesCards}>
@@ -33,7 +34,7 @@ function Places() {
             )
           })}
         </div>
-      </div>
+      </Wrapper>
     </div >
   );
 }

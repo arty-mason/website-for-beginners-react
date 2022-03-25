@@ -1,0 +1,7 @@
+.wrapper {
+  max-width: 1060px;
+  /* Giving the wraper limiting width */
+  margin: 0 auto;
+  /* Centering all the content */
+  padding: 0 15px;
+}

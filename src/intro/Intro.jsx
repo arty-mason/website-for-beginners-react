@@ -1,9 +1,10 @@
 import styles from './Intro.module.css';
+import { Wrapper } from '../shared/wrapper'
 
 function Intro() {
   return (
     <div className={styles.intro} id="sign-in">
-      <div className="wrapper">
+      <Wrapper>
         <h1 className={styles.title}> Discover Amazing places in Japan</h1>
         <p className={styles.subtitle}>
           Jump off balcony, onto stranger's head. Chase ball of string hide
@@ -24,8 +25,9 @@ function Intro() {
             </p>
           </fieldset>
         </form>
-      </div>
+      </Wrapper>
     </div >
   );
 }
+
 export default Intro;

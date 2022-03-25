@@ -1,10 +1,11 @@
 import styles from './Header.module.css';
 import odigoLogo from './svg/odigo-logo.svg';
+import { Wrapper } from '../shared/wrapper'
 
 function Header() {
     return (
         <header className={styles.container}>
-            <div className="wrapper">
+            <Wrapper>
                 <div className={styles.headerWrapper}>
                     <div className={styles.logo}>
                         <a href="/" className={styles.link}>
@@ -38,7 +39,7 @@ function Header() {
                         <span className={styles.lineThird}></span>
                     </div>
                 </div>
-            </div>
+            </Wrapper>
         </header >
     );
 }

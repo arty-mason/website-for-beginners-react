@@ -1,10 +1,11 @@
 import styles from './Footer.module.css';
 import odigoLogoFooter from "./svg/odigo-logo-footer.svg";
+import { Wrapper } from '../shared/wrapper'
 
 function Footer() {
   return (
     <footer className={styles.footer}>
-      <div className="wrapper">
+      <Wrapper>
         <div className={styles.footerItem}>
           <div className={styles.footerLogo}>
             <img
@@ -66,7 +67,7 @@ function Footer() {
             </ul>
           </nav>
         </div>
-      </div>
+      </Wrapper>
     </footer>
   )
 }
