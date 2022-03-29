@@ -1,0 +1,6 @@
+.wrapperFull{
+  max-width: 1262px;
+  margin: 0 auto;
+  padding: 0 15px;
+  /* Avoiding content "sticking" to the borders by adding side padding */
+}

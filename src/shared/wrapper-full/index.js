@@ -1,0 +1,1 @@
+export { default as WrapperFull } from "./WrapperFull"
